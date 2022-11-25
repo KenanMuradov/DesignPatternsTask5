@@ -1,5 +1,4 @@
-﻿using BenchmarkDotNet.Attributes;
-using DecoratorExample.Decorator.Abstracts;
+﻿using DecoratorExample.Decorator.Abstracts;
 using System;
 using System.Collections.Generic;
 using System.IO.Compression;
@@ -17,8 +16,6 @@ public class DataSourceCompressionDecorator : DataSourceDecorator
 
     public override void WriteData(string data)
     {
-        
-
         base.WriteData(Compress(data));
     }
 
